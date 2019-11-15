@@ -1,1 +1,0 @@
-# mj-life-is-once.github.io
