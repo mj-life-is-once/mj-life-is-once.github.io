@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Minjoo Lisa Cho's Portfolio Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+	<!--
+	<script>
+	fetch('/playground/glowsynth/index.html')
+	  .then(function(response) {
+	    return response.text();
+	  })
+	  .then(function(body) {
+	    document.querySelector('#glow').innerHTML = body;
+	  });
+	</script>
+	-->
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="../css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="../css/animate.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="../css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+	<!-- Top right elements end -->
+	<!-- Top right elements -->
+	<div class="spacial-controls">
+		<div class="search-switch"><img src="../img/search-icon.png" alt=""></div>
+		<div class="nav-switch-warp">
+			<div class="nav-switch">
+				<div class="ns-bar"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-warp">
+		<!-- header section -->
+		<header class="header-section">
+			<div class="header-close">
+				<i class="fa fa-times"></i>
+			</div>
+			<div class="header-warp">
+				<a href="" class="site-logo">
+					<img src="../img/logo.png" alt="">
+				</a>
+				<img src="../img/menu-icon.png" alt="" class="menu-icon">
+				<ul class="main-menu">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../gallery.html">Projects</a></li>
+					<li class="active"><a href="../blog.html">Playground</a></li>
+					<li><a href="../scribbles/scribbles.html">Scribbles</a></li>
+					<li><a href="../MinJoo_Cho_Resume.pdf">CV</a></li>
+				</ul>
+				<div class="social-links-warp">
+					<div class="social-links">
+						<a href="https://kr.linkedin.com/pub/minjoo-cho/4a/237/a1b"><i class="fa fa-linkedin"></i></a>
+						<a href="https://instagram.com/whenithappens17/"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.pinterest.com/koopoo87/"><i class="fa fa-pinterest"></i></a>
+					</div>
+					<div class="social-text"></div>
+				</div>
+			</div>
+			<div class="copyright">Colorlib 2018  @ All rights reserved</div>
+			</header>
+
+
+		<!-- Page section -->
+			<div class="page-section gallery-single-page">
+			<<div class="gallery-single-warp">
+				<div class="col">
+					<div class="gallery-single-text">
+					
+						<a><img src="./img/object_recognition.jpg"></a>
+						<div class="license">
+							<p>Image by <a href="https://towardsdatascience.com/beginners-guide-to-object-detection-algorithms-6620fb31c375">Towards Data Science</a></p>
+						</div>
+						<span>Artificial Intelligence</span>
+						<h2>>Realtime Object Recognition</h2>
+						<ul>
+							<li>Nov, 2019</li>
+						</ul>
+						<p>While taking a famous (as all others start with) coursera's <a href="https://www.coursera.org/learn/machine-learning">Machine Learning course</a>, I decided to explore some of the open source API with more practical applications. The first attempt was to run real-time object recogntion in PC environment. </br>
+
+						I referred to lots of detailed steps from <a href="https://towardsdatascience.com/building-a-real-time-object-recognition-app-with-tensorflow-and-opencv-b7a2b4ebdc32">towardsdatascience.com</a></p>
+
+						<h2>DEVELOPMENT</h2>
+						<p>Environment : MacOS, Tensorflow CPU </br>
+						Resource : <a href="https://github.com/tensorflow/models/tree/master/research/object_detection">Tensorflow Object Detection API</a> / OpenCV / Python 3.6 </br>
+						Pre-trained model : <a href="https://github.com/tensorflow/models/blob/477ed41e7e4e8a8443bc633846eb01e2182dc68a/object_detection/g3doc/detection_model_zoo.md">detection model ZOO</a> trained on COCO Dataset
+						</p>
+
+						<p>Google's Object Recognition API provides most of the code to train/evaluate/deploy customized recognition models farely easily. The most of the time will be taken in the process of taking various picture in different environment, occluded with different objects etc. and labeling those pictures manually.</br>
+
+						The detailed process can be found in this Youtube video</p>
+						<iframe width="100%" height="480" src="https://www.youtube.com/embed/Rgpfk6eYxJA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+						<h2>MY RESULT</h2>
+						<p>Environment : MacOS, Tensorflow CPU </br>
+						Resource : <a href="https://github.com/tensorflow/models/tree/master/research/object_detection">Tensorflow Object Detection API</a> / OpenCV / Python 3.6 </br>
+						Pre-trained model : <a href="https://github.com/tensorflow/models/blob/477ed41e7e4e8a8443bc633846eb01e2182dc68a/object_detection/g3doc/detection_model_zoo.md">detection model ZOO</a> trained on COCO Dataset
+						</p>
+
+						<p>The first video is tested with SSD MobileNet with Tensorflow CPU installed in MacOS, and the second one with Yolo v2 with Tensorflow GPU (CUDA 9.0/CUDNN 7.0) with Surfacebook 2.</p>
+
+						<iframe width="100%" height="480" src="video/Realtime_object_recognition_1.mp4" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+						<iframe width="100%" height="300" src="video/Realtime_object_recognition.mp4" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Page section end-->
+	</div>
+	<!-- Search model end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/jquery.nicescroll.min.js"></script>
+	<script src="../js/isotope.pkgd.min.js"></script>
+	<script src="../js/imagesloaded.pkgd.min.js"></script>
+	<script src="../js/circle-progress.min.js"></script>
+	<script src="../js/main.js"></script>
+
+	</body>
+</html>

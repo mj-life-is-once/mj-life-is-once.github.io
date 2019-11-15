@@ -1,0 +1,7 @@
+name: "Minjoo's Personal Homepage"
+description : "Since 2015"
+utl: http://localhost:4000
+
+safe: true
+lsi: false
+pygments: true

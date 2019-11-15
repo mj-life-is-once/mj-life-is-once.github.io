@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Minjoo Lisa Cho's Portfolio Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+	<!--
+	<script>
+	fetch('/playground/glowsynth/index.html')
+	  .then(function(response) {
+	    return response.text();
+	  })
+	  .then(function(body) {
+	    document.querySelector('#glow').innerHTML = body;
+	  });
+	</script>
+	-->
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="../css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="../css/animate.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="../css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+	<!-- Top right elements end -->
+	<!-- Top right elements -->
+	<div class="spacial-controls">
+		<div class="search-switch"><img src="../img/search-icon.png" alt=""></div>
+		<div class="nav-switch-warp">
+			<div class="nav-switch">
+				<div class="ns-bar"></div>
+			</div>
+		</div>
+	</div>
+	<div class="main-warp">
+		<!-- header section -->
+		<header class="header-section">
+			<div class="header-close">
+				<i class="fa fa-times"></i>
+			</div>
+			<div class="header-warp">
+				<a href="" class="site-logo">
+					<img src="../img/logo.png" alt="">
+				</a>
+				<img src="../img/menu-icon.png" alt="" class="menu-icon">
+				<ul class="main-menu">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../gallery.html">Projects</a></li>
+					<li class="active"><a href="../blog.html">Playground</a></li>
+					<li><a href="../scribbles/scribbles.html">Scribbles</a></li>
+					<li><a href="../MinJoo_Cho_Resume.pdf">CV</a></li>
+				</ul>
+				<div class="social-links-warp">
+					<div class="social-links">
+						<a href="https://kr.linkedin.com/pub/minjoo-cho/4a/237/a1b"><i class="fa fa-linkedin"></i></a>
+						<a href="https://instagram.com/whenithappens17/"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.pinterest.com/koopoo87/"><i class="fa fa-pinterest"></i></a>
+					</div>
+					<div class="social-text"></div>
+				</div>
+			</div>
+			<div class="copyright">Colorlib 2018  @ All rights reserved</div>
+			</header>
+
+
+		<!-- Page section -->
+			<div class="page-section gallery-single-page">
+			<div class="gallery-single-warp">
+				<div class="col">
+					<div class="gallery-single-text">
+						<a><img src="./img/brain_top.jpg"></a></p>
+						<span>Robotics/IOT</span>
+						<h2>>Self-balancing robot</h2>
+						<ul>
+							<li>Oct, 2019</li>
+						</ul>
+						
+						
+						<p>This post describes the detailed development procedure of <a href="../portfolio/gallery-brain.html">Brain Composer project</a>.</br>
+
+
+						<h2>Music Generation (Server)</h2>
+						<p>Environment : MacOS (Python - Flask) / Magenta (Python)</br>
+
+						For music style transfer, I used Magenta's Music Style transfer engine written in python. (I've always wanted to explored Magenta for so long...!) and had to make a server that interfaces main visualization page with AI core. Of course, the best scenario is to use client side only for "cleaner" exprerience, but I had to stick to python server as the Polyphony RNN is not deployed in javascript yet.
+
+						</p>
+
+						<a><img src="img/system_map.jpg"></a></p>
+
+						<p>Resource : <a href="https://www.freecodecamp.org/news/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492/">How to build a web application using Flask and deploy it to the cloud</a></br>
+
+						Pre-trained model : <a href="https://github.com/tensorflow/magenta/tree/master/magenta/models/polyphony_rnn">Magenta - Polyphony RNN</a> trained on Bach's music data
+						</p>
+
+						<h2>Music Generation (Client)</h2>
+						<p>Environment : Magenta.js / Anime.js </br>
+
+						Google recently introduced Magenta.js, letting developers to easily make an web-based interface with Magenta backend.Numerous collective examples can be found from <a href="https://magenta.tensorflow.org/demos">here.</a> I specifically used <a href="https://tensorflow.github.io/magenta-js/music/demos/transcription.html">Onsets and Frames</a> to transcribe played midi input into music notes, and <a href="https://tensorflow.github.io/magenta-js/music/demos/player.html">mm.Player</a> for the playback.
+
+						The brain signals (8 raw signals read from the device) hits the hidden web-midi piano in the webcanvas, and the resulting midi signals are transcribed accordingly. The transcribed signals then function as a motif-melody line for the music generation.</p>
+
+						<p>References : <a href="https://medium.com/@carlostoxtli/hum2song-multi-track-polyphonic-music-generation-from-voice-melody-transcription-with-neural-7a777445550b">Hum-2-Song</a>, an AI-powered web application that is able to compose the musical accompaniment of a melody produced by a human voice.</p>
+
+						<h2>Brain Interface (Connected to Client)</h2>
+						<p>Environment : Web (Javascipt : P5.js) </br>
+						I was very much inspired by this video clip of two guys playing <a href="https://store.neurosky.com/">Nerosky's Mindflex</a>. As the meditiation level rises, the levitated ball drifts more towards the another person's side :)</p>
+						<iframe width="100%" height="480" src="https://www.youtube.com/embed/YWV-XZGgARc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+						<p>There was an easy <a href="https://www.instructables.com/id/How-to-hack-EEG-toys-with-arduino/">H/W hack tutorial</a> to connect this device to ardino with serial port, and I used this H/W circuit for the installation and redesigned the whole shape. The brain reading part was also included in the libray but was written in Processing. I later translated this into P5.js code (most of the codes are compatible to each other and was easy to implement in the web environment). 
+						
+						<h2>Punching Machine </h2>
+						<a><img src="img/machine_map.jpg"></a></p>
+						<p> This was the most challenging part of the whole development process. The initial machine was inspired from <a href="https://www.jshel.co/things/music-box-hole-punching-machine">Music Box Hole Punching Machine by Josh Sheldon</a>. However, we had to redesign the machine completely so as to decrease the punching time dramatically for the whole user experience. (We aimed to make the whole experience of the installation taking below 2 minutes in total.) <p>
+
+						<iframe width="100%" height="480" src="https://www.youtube.com/embed/W41uh2bS2Yc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Page section end-->
+	</div>
+	<!-- Search model end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/jquery.nicescroll.min.js"></script>
+	<script src="../js/isotope.pkgd.min.js"></script>
+	<script src="../js/imagesloaded.pkgd.min.js"></script>
+	<script src="../js/circle-progress.min.js"></script>
+	<script src="../js/main.js"></script>
+
+	</body>
+</html>

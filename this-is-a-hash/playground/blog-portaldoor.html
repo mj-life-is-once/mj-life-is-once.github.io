@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Minjoo Lisa Cho's Portfolio Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+	<!--
+	<script>
+	fetch('/playground/glowsynth/index.html')
+	  .then(function(response) {
+	    return response.text();
+	  })
+	  .then(function(body) {
+	    document.querySelector('#glow').innerHTML = body;
+	  });
+	</script>
+	-->
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="../css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="../css/animate.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="../css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+	<!-- Top right elements end -->
+		<!-- Top right elements -->
+	<div class="spacial-controls">
+		<div class="search-switch"><img src="../img/search-icon.png" alt=""></div>
+		<div class="nav-switch-warp">
+			<div class="nav-switch">
+				<div class="ns-bar"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-warp">
+		<!-- header section -->
+		<header class="header-section">
+			<div class="header-close">
+				<i class="fa fa-times"></i>
+			</div>
+			<div class="header-warp">
+				<a href="" class="site-logo">
+					<img src="../img/logo.png" alt="">
+				</a>
+				<img src="../img/menu-icon.png" alt="" class="menu-icon">
+				<ul class="main-menu">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../gallery.html">Projects</a></li>
+					<li class="active"><a href="../blog.html">Playground</a></li>
+					<li><a href="../scribbles/scribbles.html">Scribbles</a></li>
+					<li><a href="../MinJoo_Cho_Resume.pdf">CV</a></li>
+				</ul>
+				<div class="social-links-warp">
+					<div class="social-links">
+						<a href="https://kr.linkedin.com/pub/minjoo-cho/4a/237/a1b"><i class="fa fa-linkedin"></i></a>
+						<a href="https://instagram.com/whenithappens17/"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.pinterest.com/koopoo87/"><i class="fa fa-pinterest"></i></a>
+					</div>
+					<div class="social-text"></div>
+				</div>
+			</div>
+			<div class="copyright">Colorlib 2018  @ All rights reserved</div>
+			</header>
+
+
+		<!-- Page section -->
+			<div class="page-section gallery-single-page">
+			<div class="gallery-single-warp">
+				<div class="col">
+					<div class="gallery-single-text">
+
+						<a><img src="./img/Portaldoor.jpg"></a></p>
+						<span>AR/VR</span>
+						<h2>>AR Portal Door</h2>
+						<ul>
+							<li>June, 2017</li>
+						</ul>
+						<p>The world's famous Japanese animation <a href="https://en.wikipedia.org/wiki/Doraemon">"Doraemon"</a>(First starred in 70s) depicts the story of Nobita, an ordinary boy, after his encounter to a mysterious cat-looking creature called Doraemon. Doraemon is not a mere pet but has special pocket on his belly that brings every nobel inventions to solve daily problems in the most creative way.</br>
+
+						The most iconic (or repeadly appearing) tool is "Docodemo Door"(translated as "wherever door" in English). When Doraemon pops up an enormous door from his pocket and throws to the floor, it transports people to everywhere they would like to go.</p>
+
+						<a><img src="img/dokodemo-door.jpg"></a></p>
+
+						<p>The advent of AR/VR technology enabled us to experience the most surreal effects, and the first thing that I would like to implement was this transspacial door that I've been longing to experience for so many years. (and it seemed it was not only me who has thought in this way :))</p>
+
+						<h2>DEVELOPMENT</h2>
+						<p>Environment : Unity 3D </br>
+						Development Package : ARCore </br>
+						Testing Device : Galaxy S8 </br>
+						</p>
+
+						<p>The approached to make a portal door is easily done by applying stencil material to the sphere object according to the viewpoint of the user camera. The following Youtube video helped me to write simple shader code to achieve this effect</p>
+
+						<iframe width="100%" height="480"src="https://www.youtube.com/embed/Tj0KQiuc7AI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+						<h2>RESULT</h2>
+						<p>I mapped license free 360 degree video (You can easily find link from <a href="https://vimeo.com/215984568">here<a/>) to test the code, and the result is shown as following video :) </br>
+
+						By applying the similar scale to the real object, the effect looks more bizzare. </p>
+
+						<video width="100%" height="480" src="video/AR_Portaldoor.mp4" allowfullscreen controls muted=""></iframe>
+
+						<h2>WITH GOOGLE CARDBOARD</h2>
+						<p>Sadly, ARCore still does not support Google Cardboard complile in Unity environment. As an get-around-method, I used the plane recognition feature in <a href="https://developer.vuforia.com/">Vuforia</a> instead. However, the head tracking is not as smooth as I expected, and sometimes the portal space looses its spatial location too frequently.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Page section end-->
+	</div>
+	<!-- Search model end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/jquery.nicescroll.min.js"></script>
+	<script src="../js/isotope.pkgd.min.js"></script>
+	<script src="../js/imagesloaded.pkgd.min.js"></script>
+	<script src="../js/circle-progress.min.js"></script>
+	<script src="../js/main.js"></script>
+
+	</body>
+</html>
