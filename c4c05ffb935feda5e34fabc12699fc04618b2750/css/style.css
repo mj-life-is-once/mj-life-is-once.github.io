@@ -349,6 +349,10 @@ ol {
 	position: relative;
 	overflow: hidden;
 	left:0;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-right: none;
+	max-width: 100%;
  }
 .container img{
     width: 100%;
@@ -663,11 +667,12 @@ ol {
 
 .about-warp {
 	max-width: 1260px;
-	padding: 0 47px 105px;
+	/*padding: 0 47px 105px;*/
+	padding: auto;
 }
 
 .about-text {
-	padding-right: 60px;
+	/*padding-right: 60px;*/
 	text-align: left;
 }
 
@@ -693,7 +698,6 @@ ol {
 .about-text .door{
 	width: 800px;
 	justify-content: center;
-	
 
 }
 
@@ -729,11 +733,14 @@ ol {
 .about-image {
 	display: inline-block;
 	position: relative;
+	max-width: 400px;
+
 }
 
 .about-image img {
 	z-index: 2;
 	position: relative;
+	margin: auto;
 }
 
 .about-image:after {
@@ -864,8 +871,9 @@ ol {
 }
 
 .gallery-single-warp {
-	padding: 0 15px;
+	
 	/*
+	padding: 0 15px;
 	width:100%;
 	*/
 }
@@ -1148,6 +1156,10 @@ ol {
 	width: 100%;
 }
 
+.row{
+	justify-content: center;
+}
+
 /* ----------------
   Elements page
 ---------------------*/
@@ -1379,8 +1391,12 @@ ol {
 
 @media (max-width: 1350px) {
 	.about-warp {
+		/*
 		padding-left: 30px;
-		padding-right: 60px;
+		padding-right: 60px;*/
+		padding-left: 30px;
+		padding-right: 30px;
+
 	}
 	.about-text {
 		padding-right: 0;
@@ -1659,6 +1675,7 @@ ol {
 	.slider-item .si-text-box {
 		width: 470px;
 	}
+
 }
 
 /* Small Mobile :320px. */
