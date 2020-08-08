@@ -668,6 +668,7 @@ ol {
 
 .about-text {
 	padding-right: 60px;
+	text-align: left;
 }
 
 .about-text span {
@@ -680,11 +681,20 @@ ol {
 
 .about-text h2 {
 	margin-bottom: 30px;
-	font-size: 48px;
+	font-size: 30px;
+	text-transform: uppercase;
 }
+
 
 .about-text p {
 	margin-bottom: 110px;
+}
+
+.about-text .door{
+	width: 800px;
+	justify-content: center;
+	
+
 }
 
 .milestones {
