@@ -533,16 +533,17 @@ main {
 }
 
 
-@media screen and (min-width: 51em) { /** 85em*/
+@media screen and (max-width: 1199px){ /** 85em*/
 	.grid__item-text {
 		width: 100%;
 	}
 }
 
-@media screen and (min-width: 50em) {
+
+@media screen and (min-width: 1199px) { /**65em**/
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(2,40vmax);
+		grid-template-columns: repeat(2,50%);
 	}
 	.grid__item {
 		height: 50vmax;
